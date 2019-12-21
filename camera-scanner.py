@@ -7,5 +7,5 @@ while True:
     if not ret:
         break
     # cv2.imshow("frame", frame)
-    print(frame)
+    print("okkkk", frame)
     cv2.waitKey(1)
