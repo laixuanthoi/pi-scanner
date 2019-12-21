@@ -21,5 +21,5 @@ camera.capture(rawCapture, format="bgr")
 
 while True:
     image = rawCapture.array
-    print(decode(image))
+    print(image)
     cv2.waitKey(1)
