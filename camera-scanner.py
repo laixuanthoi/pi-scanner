@@ -8,4 +8,4 @@ while True:
         break
     # cv2.imshow("frame", frame)
     print("okkkk")
-    cv2.waitKey(1)
+    cv2.waitKey(10)
