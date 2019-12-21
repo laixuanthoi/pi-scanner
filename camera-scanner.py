@@ -2,6 +2,7 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
 import cv2
+from pyzbar.pyzbar import decode
  
 # initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()
@@ -20,5 +21,5 @@ camera.capture(rawCapture, format="bgr")
 
 while True:
     image = rawCapture.array
-    print(image)
-    cv2.waitKey(10)
+    print(decode(image))
+    cv2.waitKey(1)
